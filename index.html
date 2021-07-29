@@ -12,15 +12,19 @@
 <body>
     <div id="wrap" class="flexbox">
         <header id="header">
-            <div id="headerLogo"><img src="images/logo.png" alt="headerLogo"></div> <!-- div#headerLogo -->
-            <nav id="headerGNB">
+            <div id="headerLogo">
+                <a href="#">
+                    <img src="" alt="headerLogoImage">
+                </a>
+            </div> <!-- div#headerLogo -->
+            <nav id="headerGnb">
                 <ul id="mainMenu">
                     <li class="mainLi">
                         <a href="#">협회소개</a>
                         <ul class="subMenu">
                             <li class="subLi"><a href="#">인사말</a></li>
                             <li class="subLi"><a href="#">명인</a></li>
-                            <li class="subLi"><a href="#">오시는 길</a></li>
+                            <li class="subLi"><a href="#">오시는길</a></li>
                         </ul>
                     </li>
                     <li class="mainLi">
@@ -48,95 +52,102 @@
                         </ul>
                     </li>
                 </ul>
-
-            </nav> <!-- nav#headerGNB -->
+            </nav> <!-- nav#headerGnb -->
         </header> <!-- header#header -->
-
-        <div id="contents">
+        <div id="contentsArea">
             <main id="main">
                 <div id="slideFrame">
-                    <div id="slideShuttle" class="flexbox">
-                        <div class="slide">
-                            <img src="images/slide1.jpg" alt="슬라이드이미지">
-                            <p>떠나요! 남도맛축제!</p>
-                        </div>
-                        <div class="slide">
-                            <img src="images/slide2.jpg" alt="슬라이드이미지">
-                            <p>메타세콰이어길을 걸어요!</p>
-                        </div>
-                        <div class="slide">
-                            <img src="images/slide3.jpg" alt="슬라이드이미지">
-                            <p>테마기행과 함께 즐겨요!
-                            </p>
-                        </div>
-                    </div> <!-- div#slideShuttle -->
+                    <div id="slideShuttle">
+                        <div class="slideImage">
+                            <a href="#">
+                                <img src="images/slide1.jpg" alt="슬라이드이미지1">
+                            </a>
+                        </div> <!-- div.slideImage1 -->
+                        <div class="slideImage">
+                            <a href="#">
+                                <img src="images/slide2.jpg" alt="슬라이드이미지2">
+                            </a>
+                        </div> <!-- div.slideImage2 -->
+                        <div class="slideImage">
+                            <a href="#">
+                                <img src="images/slide3.jpg" alt="슬라이드이미지3">
+                            </a>
+                        </div> <!-- div.slideImage3 -->
                 </div> <!-- div#slideFrame -->
-                <div id="mainBBS" class="flexbox">
+                <div id="bbs" class="flexbox">
                     <div id="notice">
-
-                        <table class="bbs">
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="bbs">
-                            <button type="button">공지사항</button>
-                            <tbody>
-                                <tr>
-                                    <td>맛집 베스트 사진 선정</td>
-                                    <td>2020.03.14</td>
-                                </tr>
-                                <tr>
-                                    <td>남도맛집기행 도장깨기</td>
-                                    <td>2020.03.14</td>
-                                </tr>
-                                <tr>
-                                    <td>메타세콰이어길 축제오픈</td>
-                                    <td>2019.04.12</td>
-                                </tr>
-                                <tr>
-                                    <td>여수 아쿠아리움에서 온천을</td>
-                                    <td>2019.03.05</td>
-                                </tr>
-                            </tbody>
+                        <button type="button" class="tabBtn selected">공지사항</button>
+                        <table id="noticeTbl" class="bbsTable">
+                            <tr>
+                                <td><a href="#">맛집 베스트 사진 선정</a></td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">남도맛집기행 도장깨기</a></td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">메타세콰이어길 축제오픈</a></td>
+                                <td>2019.04.12</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">여수 아쿠아리움에서 온천을</a></td>
+                                <td>2019.03.05</td>
+                            </tr>
                         </table>
                     </div> <!-- div#notice -->
                     <div id="gallery">
-                    <table class="bbs">
-                        <button type="button">갤러리</button>
-                        <tbody>
-                            <td><img src="images/icon1.jpg" alt="갤러리이미지1"></td>
-                            <td><img src="images/icon2.jpg" alt="갤러리이미지2"></td>
-                            <td><img src="images/icon3.jpg" alt="갤러리이미지3"></td>
-                        </tbody>
-                    </table>
+                        <button type="button" class="tabBtn">갤러리</button>
+                        <table id="galleryTbl" class="bbsTable">
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon1.jpg" alt="갤러리이미지1">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon2.jpg" alt="갤러리이미지2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon3.jpg" alt="갤러리이미지3">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
                     </div> <!-- div#gallery -->
                     <div id="banner">
-                        <img src="images/banner.jpg" alt="배너이미지">
+                        <a href="#">
+                            <img src="images/banner.jpg" alt="배너이미지">
+                        </a>
                     </div> <!-- div#banner -->
-                </div> <!-- div#mainBBS -->
+                </div> <!-- div#bbs -->
             </main> <!-- main#main -->
-
             <footer id="footer" class="flexbox">
                 <div id="footerLogo">
-                    footerLogo
-                </div>
-                <div id="footerContents">
-                    <nav id="footerLNB">
-                        <ul id="lnbMainMenu" class="flexbox">
-                            <li class="lnbMainLi"><a href="#">테마기행소개</a></li>
-                            <li class="lnbMainLi"><a href="#">개인정보취급방침</a></li>
-                            <li class="lnbMainLi"><a href="#">이메일무단수집거부</a></li>
-                        </ul>
-                    </nav> <!-- div#footerLNB -->
+                    <a href="#">
+                        <img src="" alt="푸터로고이미지">
+                    </a>
+                </div> <!-- div#footerLogo -->
+                <div id="footerContentsArea">
+                    <nav id="footerLnb" class="flexbox">
+                        <div class="lnbMenu"><a href="#">테마기행소개</a></div>
+                        <div class="lnbMenu"><a href="#">개인정보취급방침</a></div>
+                        <div class="lnbMenu"><a href="#">이메일무단수집거부</a></div>
+                    </nav>
                     <div id="copyright">
                         COPYRIGHTⓒ by 남도맛기행 축제  ALL RIGHTS RESERVED
-                    </div> <!-- div#copyright -->
-                </div> <!-- div#footerContents -->
+                    </div>
+                </div>
             </footer> <!-- footer#footer -->
-        </div> <!-- div#contents -->
-    </div>    
+        </div> <!-- div#contentsArea -->
+    </div> <!-- div#wrap -->
+    <div id="layerPopUp">
+        <div id="popUpContents">
+
+        </div> <!-- div#popUpContents -->
+    </div> <!-- div#layerPopUp -->
 </body>
 </html>
